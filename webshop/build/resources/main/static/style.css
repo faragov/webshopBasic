@@ -1,0 +1,121 @@
+body {
+    background-color: darkgreen;
+    color: azure;
+}
+
+table {
+    margin: 0px;
+    border: 1px solid lightyellow;
+    border-collapse: collapse;
+    position: fixed;
+    display: flex;
+
+}
+
+th{
+    width: 100px;
+    border: 1px solid yellow;
+    background-color: cyan;
+    color: darkgreen;
+}
+
+.table-container {
+    display: flex;
+    padding: 90px;
+    margin-left: 300px;
+    border: 0px;
+}
+
+
+tr td {
+    width: 100px;
+    border: 1px solid yellow;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav {
+    position: fixed;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: white;
+    text-transform: uppercase;
+}
+
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+    transition: black;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 15px;
+    font-weight: 300;
+    transition: pink;
+}
+
+.nav * {
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+}
+
+.nav a.current,
+.nav a:hover {
+    color: deepskyblue;
+}
+
+.nav a.current {
+    font-weight: 600;
+}
+
+.nav a.current::before {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: rebeccapurple;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: orange;
+}
+
+.nav.active {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav.active a {
+    color: #000;
+}
+
+.nav.active a.current::before {
+    opacity: 0;
+}
+
+.nav.active .container {
+    padding: 20px 0;
+}
+
+.form-row{
+    padding: 80px;
+
+}
